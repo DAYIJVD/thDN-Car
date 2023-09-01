@@ -1,6 +1,6 @@
 import React from 'react';
 import Location from '../icons/Location';
-import Link from 'next/link';
+
 import { useRouter } from 'next/router';
 const Card = ({name,model, id ,location, price,year,image,distance}) => {
     const Router=useRouter()
