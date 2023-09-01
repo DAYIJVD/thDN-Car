@@ -1,7 +1,7 @@
 import React from 'react';
 import carsData from '@/data/dataCars';
 import { useRouter } from 'next/router';
-import Card from '../../components/module/CardComponent';
+import Card from '../../components/CardComponent';
 const SearchPage = () => {
     const Router=useRouter()
     const [Searched]=Router.query.searchPage;

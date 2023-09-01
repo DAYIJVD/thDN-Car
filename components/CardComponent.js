@@ -1,5 +1,5 @@
 import React from 'react';
-import Location from '../icons/Location';
+import Location from './Location';
 
 import { useRouter } from 'next/router';
 const Card = ({name,model, id ,location, price,year,image,distance}) => {

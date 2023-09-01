@@ -1,5 +1,5 @@
 import React from 'react';
-import SedanComponent from '@/components/module/SedanComponent';
+import SedanComponent from '@/components/SedanComponent';
 const Sedan = () => {
     return (
         <div>

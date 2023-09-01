@@ -1,5 +1,5 @@
 import React from 'react';
-import SuvComponent from "@/components/module/SuvComponent"
+import SuvComponent from "@/components/SuvComponent"
 const Suv = () => {
     return (
         <div>

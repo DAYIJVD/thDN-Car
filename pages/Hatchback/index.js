@@ -1,4 +1,4 @@
-import HatchbackComponent from '@/components/module/HatchbackComponent';
+import HatchbackComponent from '@/components/HatchbackComponent';
 import React from 'react';
 
 const Hatchback = () => {

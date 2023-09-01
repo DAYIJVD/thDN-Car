@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router';
 
 import React from 'react';
-import Company from '../icons/Company';
-import Model from '../icons/Model';
-import Calender from '../icons/Calender';
-import Road from '../icons/Road';
-import Location from '../icons/Location';
-import Money from '../icons/Money';
+import Company from './Company';
+import Model from './Model';
+import Calender from './Calender';
+import Road from './Road';
+import Location from './Location';
+import Money from './Money';
 
 const AbouteCarComponent = ({car}) => {
     const Router=useRouter()

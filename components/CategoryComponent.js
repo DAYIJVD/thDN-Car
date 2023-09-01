@@ -1,8 +1,8 @@
 import React from 'react';
-import Suv from '../icons/Suv';
-import Sport from '../icons/Sport';
-import Sedan from '../icons/Sedan';
-import Hatchback from '../icons/Hatchback';
+import Suv from './Suv';
+import Sport from './Sport';
+import Sedan from './Sedan';
+import Hatchback from './Hatchback';
 import Link from 'next/link';
 
 const Category = () => {
