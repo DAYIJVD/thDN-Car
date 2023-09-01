@@ -14,7 +14,7 @@ const Layout = ({children}) => {
             <p className="border-b-2">Choose Your Car </p>
             <Search/>
         </header> 
-        <div class="min-h-[1000px]">
+        <div className="min-h-[1000px]">
          {children}
          </div> 
          <footer className="text-center mx-auto bg-blue-700 p-[1rem]">
