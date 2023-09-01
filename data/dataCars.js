@@ -27,7 +27,7 @@ const carsData = [
     },
     {
       id: 3,
-      name: "Mercedes-Benz",
+      name: "M-Benz",
       model: "E250",
       year: "2017",
       distance: "89190",
