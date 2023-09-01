@@ -8,13 +8,13 @@ import Location from '../icons/Location';
 import Money from '../icons/Money';
 
 const AbouteCarComponent = ({car}) => {
-    const router=useRouter()
+    const Router=useRouter()
     return (<>
         <div className=" mr-[520px] sm:mr-[250px] mt-5">
-        <button onClick={()=>router.back()} className=" bg-slate-400 w-[80px] px-3 py-1  transition-all duration-300 rounded-[10px] hover:bg-slate-700  ">{`< back`}</button>
+        <button onClick={()=>Router.back()} className=" bg-slate-400 w-[80px] px-3 py-1  transition-all duration-300 rounded-[10px] hover:bg-slate-700  ">{`< back`}</button>
         </div>
         <div className="flex  flex-col my-4 sm:w-[365px]  w-[fit-content] p-[0.5rem] rounded-[10px]   animate-fade-left animate-once animate-duration-1000 animate-delay-[500ms] animate-ease-in animate-normal animate-fill-backwards">
-            <img className="rounded-[10px] w-[600px] sm:w-[350px] " src={car.image} />
+            <img alt='car' className="rounded-[10px] w-[600px] sm:w-[350px] " src={car.image} />
             <h1 className="my-1 text-[20px] ">{car.name}-{car.model}</h1>
             <div className="rounded-[10px] p-2 bg-slate-500 sm:w-[350px]" >
                 <div className="flex justify-between">

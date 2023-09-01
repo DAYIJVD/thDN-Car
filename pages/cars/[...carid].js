@@ -1,4 +1,4 @@
-import AbouteCarComponent from '@/components/module/abouteCarComponent';
+import AbouteCarComponent from '@/components/module/AbouteCarComponent';
 import carsData from '@/data/dataCars';
 import { useRouter } from 'next/router';
 import React from 'react';

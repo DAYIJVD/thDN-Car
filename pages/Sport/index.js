@@ -1,5 +1,5 @@
 import React from 'react';
-import SportComponents from '@/components/module/sportComponent';
+import SportComponents from '@/components/module/SportComponent';
 const Sport = () => {
     return (
         <div>

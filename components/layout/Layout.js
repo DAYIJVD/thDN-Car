@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import Search from '../module/searchComponent';
+import Search from '../module/SearchComponent';
 
 const Layout = ({children}) => {
     return (

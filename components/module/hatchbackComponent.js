@@ -1,6 +1,6 @@
 import React from 'react';
 import data from "@/data/dataCars";
-import Card from './cardComponent';
+import Card from './CardComponent';
 import { useRouter } from 'next/router';
 const HatchbackComponent = () => {
   const Router=useRouter()

@@ -1,5 +1,5 @@
-import AllCards from '@/components/module/allCardsComponent';
-import CardsHome from '@/components/module/cardsHomeComponent';
+import AllCards from '@/components/module/AllCardsComponent';
+import CardsHome from '@/components/module/CardsHomeComponent';
 import React from 'react';
 
 const Home = () => {

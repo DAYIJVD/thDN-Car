@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 import carsData from '@/data/dataCars';
-import Card from '@/components/module/cardComponent';
+import Card from '@/components/module/CardComponent';
 const Minmax = () => {
     const router=useRouter()
     const Minmax=router.query.minmax

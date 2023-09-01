@@ -1,6 +1,6 @@
-import CardsHome from "@/components/module/cardsHomeComponent";
-import Category from "@/components/module/categoryComponent";
-import FilterPrice from "@/components/module/filterPrice";
+import CardsHome from "@/components/module/CardsHomeComponent";
+import Category from "@/components/module/CategoryComponent";
+import FilterPrice from "@/components/module/FilterPrice";
 
 export default function Home() {
   return (

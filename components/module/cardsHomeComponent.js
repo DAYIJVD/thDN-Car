@@ -1,6 +1,6 @@
 import React from 'react';
 import data from "@/data/dataCars"
-import Card from './cardComponent';
+import Card from './CardComponent';
 const CardsHome = () => {
     const filter=data.filter(i=>i.id<5)
     return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import data from "@/data/dataCars";
-import Card from './cardComponent';
+import Card from './CardComponent';
 import { useRouter } from 'next/router';
-const suvComponents = () => {
+const SuvComponents = () => {
   const Router=useRouter()
     const Suv=data.filter(i=>i.category==="suv")
     return (<>
@@ -17,4 +17,4 @@ const suvComponents = () => {
     );
 }
 
-export default suvComponents;
+export default SuvComponents;
