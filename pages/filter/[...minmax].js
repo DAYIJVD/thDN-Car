@@ -18,10 +18,9 @@ const Minmax = () => {
             </>
         );
        }else{
-        {
-          setTimeout(()=>{
-            return(<>
-              <div className="ml-[10rem] my-[4rem] sm:ml-[4rem]">
+      
+            return(<div className=" animate-fade-up animate-once animate-duration-500 animate-delay-[2000ms] animate-ease-linear">
+              <div className="ml-[10rem] my-[4rem] sm:ml-[4rem] ">
               <button onClick={()=>Router.back()} className=" hover:bg-slate-400 w-[80px] px-3 py-1  transition-all duration-300 rounded-[10px] bg-blue-500 ">{`< Back`}</button>
               </div>
           <div className="flex justify-center items-center mt-9">
@@ -29,9 +28,8 @@ const Minmax = () => {
               There are no machines with the minimum and maximum you specified {`:(`}
               </h1>
           </div>
-          </>)
-          },2000)
-        }
+          </div>)
+        
        
        } 
 }
