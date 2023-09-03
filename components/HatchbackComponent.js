@@ -1,8 +1,7 @@
 import React from 'react';
-import data from "@/data/dataCars";
 import Card from './CardComponent';
 import { useRouter } from 'next/router';
-const HatchbackComponent = () => {
+const HatchbackComponent = ({data}) => {
   const Router=useRouter()
     const hatch=data.filter(i=>i.category==="hatchback")
     return (<>

@@ -10,7 +10,7 @@ import Money from './Money';
 
 const AbouteCarComponent = ({car}) => {
     const Router=useRouter()
-    if(car){ return (<>
+     return (<>
         <div className=" mr-[520px] sm:mr-[250px] mt-5">
         <button onClick={()=>Router.back()} className=" bg-slate-400 w-[80px] px-3 py-1  transition-all duration-300 rounded-[10px] hover:bg-slate-700  ">{`< Back`}</button>
         </div>
@@ -74,9 +74,6 @@ const AbouteCarComponent = ({car}) => {
             </div>
         </div>
         </>
-    );}else{
-        return <div></div>
-    }
-}
+    )}
 
 export default AbouteCarComponent;

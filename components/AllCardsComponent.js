@@ -1,9 +1,8 @@
 import React from 'react';
-import data from "@/data/dataCars";
 import Card from './CardComponent';
 import { useRouter } from 'next/router';
 
-const AllCards = () => {
+const AllCards = ({data}) => {
     const Router=useRouter()
     return (<>
         <div className="ml-[10rem] my-[4rem] sm:ml-[4rem]">

@@ -2,12 +2,19 @@ import React from 'react';
 import carsData from '@/data/dataCars';
 import { useRouter } from 'next/router';
 import Card from '../../components/CardComponent';
-const SearchPage = () => {
+const SearchPage = ({data}) => {
     const Router=useRouter()
     const Searched=Router.query.searchPage;
   
-    const search_ed=Searched?carsData.filter(i=>i.name.toUpperCase().includes(Searched[0].toUpperCase())||i.model.toUpperCase().includes(Searched[0].toUpperCase())||i.category.toUpperCase().includes(Searched[0].toUpperCase())):[];
+    const search_ed=Searched?data.filter(i=>i.name.toUpperCase().includes(Searched[0].toUpperCase())||i.model.toUpperCase().includes(Searched[0].toUpperCase())||i.category.toUpperCase().includes(Searched[0].toUpperCase())):[];
     
+    if(Router.isFallback){
+        return(    
+<div  className="text-center mx-auto">
+    <h1 className="text-blue-700">Loading...</h1>
+</div>
+        )
+    }
    if(search_ed.length){
     return (<>
         <div className="ml-[10rem] my-[4rem] sm:ml-[4rem]">
@@ -37,3 +44,19 @@ const SearchPage = () => {
 }
 
 export default SearchPage;
+export async function getStaticPaths(){
+   
+    return{
+        paths:[],
+        fallback:true
+    }
+}
+export async function getStaticProps(){
+    const res =await fetch(` http://localhost:4500/data`);
+    const data=await res.json()
+return{
+    props:{
+        data,
+    }
+}
+}

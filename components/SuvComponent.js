@@ -1,8 +1,7 @@
 import React from 'react';
-import data from "@/data/dataCars";
 import Card from './CardComponent';
 import { useRouter } from 'next/router';
-const SuvComponents = () => {
+const SuvComponents = ({data}) => {
   const Router=useRouter()
     const Suv=data.filter(i=>i.category==="suv")
     return (<>

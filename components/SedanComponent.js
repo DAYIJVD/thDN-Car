@@ -1,8 +1,7 @@
 import React from 'react';
-import data from "@/data/dataCars";
 import Card from './CardComponent';
 import { useRouter } from 'next/router';
-const SedanComponent = () => {
+const SedanComponent = ({data}) => {
   const Router=useRouter()
     const Sedan=data.filter(i=>i.category==="sedan")
     return (<>
